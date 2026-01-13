@@ -10,7 +10,6 @@
     <script src="script.js"></script>
     <div id="banner" class="container center">
       <h1> Simple Arthmetic Formulas</h1>
-      <h3>Circle Example</h3>
     </div>
     <nav class="container">
       <a href="index.html"> Home </a>
@@ -24,6 +23,11 @@
       </div>
       <div class="card">
         <!-- Challenge 3: Create the necessary UI in order to calculate the area and circumference of a circle.  This will require separate buttons for area and circumference each with their own handler. -->
+  <input type="text" placeholder="Enter the radius of a circle." id="radius">
+  <br>
+<input type="button" onclick="cirArea()" value="Calculate Area">
+<input type="button" onclick="cirPerimeter()" value="Calculate Circumference">
+<div id="output"></div>
 
         <!-- Go to script.js to complete Challenge 4 --> 
         

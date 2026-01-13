@@ -3,12 +3,30 @@
       2) Perform the necessary calculations
       3) Display the results in the appropriate element
 */
+
+
 function recArea(){
+  let l = document.getElementById("lr");
+  let h = document.getElementById("hr");
+  let output = document.getElementById("output")
+
+  let area = l.value * h.value
+
+  output.innerHTML = area;
+
 
 }
 
 function recPerimeter(){
+  let l = document.getElementById("lr");
+  let h = document.getElementById("hr");
+  let output = document.getElementById("output")
 
+  let perim = 2 * (parseFloat(l.value) + parseFloat(h.value))
+
+
+  output.innerHTML = perim;
+  
 }
 
 
@@ -17,14 +35,22 @@ function recPerimeter(){
       2) Perform the necessary calculations
       3) Display the results in the appropriate element
 */
-let pi = 3.1415926;
+
 
 function cirArea(){
-
+      let pi = 3.1415926;
+      let radius = document.getElementById("radius")
+      let output = document.getElementById("output")
+      let area = pi * (parseFloat(radius.value) * parseFloat(radius.value))
+      output.innerHTML = area
 }
 
 function cirPerimeter(){
-
+      let pi = 3.1415926;
+      let radius = document.getElementById("radius")
+      let output = document.getElementById("output")
+      let circum = 2 * pi * radius.value
+      output.innerHTML = circum
 }
 
 /* Challenge Bonus: Complete the area and perimeter functions below for the triangle.  Guidelines,
