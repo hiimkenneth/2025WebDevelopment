@@ -16,17 +16,17 @@ function Slope(){
     let x2 = document.getElementById("x2")
     let y2 = document.getElementById("y2")
     let slope = document.getElementById("slope")
-    let sloperesult = ((parseFloat(y2.value) - (parseFloat(y1.value)))) / ((parseFloat(x2.value) - parseFloat(x1.value)));
+    let sloperesult = ((parseFloat(y2.value))) - ((parseFloat(y1.value))) / (parseFloat(x2.value)) - (parseFloat(x1.value));
 
     slope.innerHTML = sloperesult
 }
 
 // Challenge 6:  Create the function for the BMI program.  Refer to the resource link in the HTML for assistance.
 function BMI(){
-    let height = document.getElementById("height") / 100
+    let height = document.getElementById("height")
     let weight = document.getElementById("weight")
     let BMI = document.getElementById("BMI")
-    let bmiresult = ((parseFloat(weight.value)) * 703) / ((parseFloat(height.value) * 12))
+    let bmiresult = parseFloat(weight.value)  / (parseFloat(height.value)) ^ 2
 
     BMI.innerHTML = bmiresult
 }
