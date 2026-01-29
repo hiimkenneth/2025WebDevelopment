@@ -3,7 +3,10 @@
 
 
 /* Challenge 4: Does the function name match the event handler referenced in the event listener? */
-function volume(){
+
+function cylinder(){
+  
+}
 
   /* Challenge 5: Are there any errors in retrieving and parsing the information from the text inputs? */
   let r = parseInt(document.getElementBy("r").value);
@@ -16,6 +19,4 @@ function volume(){
   let v = math.PI * math.pow(r,2) / h;
 
   /* Challenge 8: Are there any errors in displaying the output? */
-  output.innerHTML = `Volume of the cylinder is ${v} 
-
-}
+  output.innerHTML = "Volume of the cylinder is" + $v
