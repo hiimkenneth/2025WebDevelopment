@@ -15,8 +15,23 @@ Now that you have the template, use a for loop to produce all five pizza cards.
 // Go to style.css for Challenge 3
 
 //init() function is called when the page loads in index.html
+
+
 function init(){
-  
+   let output = document.getElementById("output")
+   let price = parseInt(Math.random() * 30 + 1)
+   let build = " "
+   let i=1
+
+   for (let i=0; i < 5; i += 1){
+      build += `<div>`;
+      build +=    `<img src="images/title ${i}.png">`;
+      build +=    `<img src="images/pizza ${i}.png">`;
+      build +=    `<p> ${price} </p>`;
+      build +=    `<input type="text" placeholder="Enter Quantity">`;
+      build += `</div>`;
+
+   }
+   output.innerHTML = build
 
 }
-
